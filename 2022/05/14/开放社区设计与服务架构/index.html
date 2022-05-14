@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    
+<meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,minimum-scale=1,maximum-scale=1">
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+  <meta name="description" content="OPENNESS COMMUNITY & IDEA 的设计与服务架构"/>
+
+
+
+
+  <meta name="keywords" content="(E)21-0530," />
+
+
+
+
+
+  <link rel="alternate" href="/default" title="blog" >
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=1.1" />
+
+
+
+<link rel="canonical" href="http://example.com/2022/05/14/开放社区设计与服务架构/"/>
+
+
+<meta name="description" content="2012 年 Wiley 副教授和 David and Green 知识共享全球学习主管在 Educause 所提出的《INTERDISCIPLINARY STUDIES: A CONNECTED LEARNING APPROACH》：“开放教育资源 OER”是指根据开放版权许可（例如知识共享) 或在公共领域。在这两种情况下，中的每个人世界享受免费访问开放式教育资源进行免费学习，而其中所提到“教育">
+<meta property="og:type" content="article">
+<meta property="og:title" content="OPENNESS COMMUNITY &amp; IDEA 的设计与服务架构">
+<meta property="og:url" content="http://example.com/2022/05/14/%E5%BC%80%E6%94%BE%E7%A4%BE%E5%8C%BA%E8%AE%BE%E8%AE%A1%E4%B8%8E%E6%9C%8D%E5%8A%A1%E6%9E%B6%E6%9E%84/index.html">
+<meta property="og:site_name" content="blog">
+<meta property="og:description" content="2012 年 Wiley 副教授和 David and Green 知识共享全球学习主管在 Educause 所提出的《INTERDISCIPLINARY STUDIES: A CONNECTED LEARNING APPROACH》：“开放教育资源 OER”是指根据开放版权许可（例如知识共享) 或在公共领域。在这两种情况下，中的每个人世界享受免费访问开放式教育资源进行免费学习，而其中所提到“教育">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://49812933408852955071488026628034-1301075051.cos.ap-nanjing.myqcloud.com/202205141214471.png">
+<meta property="og:image" content="https://49812933408852955071488026628034-1301075051.cos.ap-nanjing.myqcloud.com/202205141241380.png">
+<meta property="og:image" content="https://49812933408852955071488026628034-1301075051.cos.ap-nanjing.myqcloud.com/202205141325228.png">
+<meta property="og:image" content="https://nickv.codes/wp-content/uploads/2015/08/elastic-algolia-618x190.jpg">
+<meta property="og:image" content="https://49812933408852955071488026628034-1301075051.cos.ap-nanjing.myqcloud.com/202205141409478.png">
+<meta property="og:image" content="https://49812933408852955071488026628034-1301075051.cos.ap-nanjing.myqcloud.com/202205141414611.png">
+<meta property="og:image" content="https://49812933408852955071488026628034-1301075051.cos.ap-nanjing.myqcloud.com/202205141417048.png">
+<meta property="og:image" content="https://49812933408852955071488026628034-1301075051.cos.ap-nanjing.myqcloud.com/202205141423411.png">
+<meta property="og:image" content="https://49812933408852955071488026628034-1301075051.cos.ap-nanjing.myqcloud.com/202205141428995.png">
+<meta property="og:image" content="https://49812933408852955071488026628034-1301075051.cos.ap-nanjing.myqcloud.com/202205141428617.png">
+<meta property="og:image" content="https://49812933408852955071488026628034-1301075051.cos.ap-nanjing.myqcloud.com/202205141433660.png">
+<meta property="article:published_time" content="2022-05-14T03:34:51.322Z">
+<meta property="article:modified_time" content="2022-05-14T06:37:10.898Z">
+<meta property="article:author" content="Jiangxue Team">
+<meta property="article:tag" content="(E)21-0530">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://49812933408852955071488026628034-1301075051.cos.ap-nanjing.myqcloud.com/202205141214471.png">
+
+
+<link rel="stylesheet" type="text/css" href="/css/style.css?v=1.1" />
+<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'>
+
+
+
+
+
+<script type="text/javascript">
+  var themeConfig = {
+    fancybox: {
+      enable: false
+    },
+  };
+</script>
+
+
+
+
+  
+
+
+
+    <title> OPENNESS COMMUNITY & IDEA 的设计与服务架构 - blog </title>
+  <meta name="generator" content="Hexo 5.4.2"></head>
+
+  <body>
+    <div id="page">
+      <header id="masthead"><div class="site-header-inner">
+    <h1 class="site-title">
+        <a href="/." class="logo"><img src="https://49812933408852955071488026628034-1301075051.cos.ap-nanjing.myqcloud.com/202204292257912.png" style="width: 37px;margin-top: -10px;"></a>
+    </h1>
+/ <span>blog</span>
+    <nav id="nav-top">
+        
+            <ul id="menu-top" class="nav-top-items">
+                
+                    <li class="menu-item">
+                        <a href="/archives">
+                            
+                            
+                                Archives
+                            
+                        </a>
+                    </li>
+                
+                    <li class="menu-item">
+                        <a href="/about">
+                            
+                            
+                                About
+                            
+                        </a>
+                    </li>
+                
+            </ul>
+        
+  </nav>
+</div>
+
+      </header>
+      <div id="content">
+        
+    <div id="primary">
+        
+  <article class="post">
+    <header class="post-header">
+      <h1 class="post-title">
+        
+          OPENNESS COMMUNITY & IDEA 的设计与服务架构
+        
+      </h1>
+
+      <time class="post-time">
+          5月 14 2022
+      </time>
+    </header>
+
+
+
+    
+            <div class="post-content">
+            <p>2012 年 Wiley 副教授和 David and Green 知识共享全球学习主管在 Educause 所提出的《INTERDISCIPLINARY STUDIES: A CONNECTED LEARNING APPROACH》：“开放教育资源 OER”是指根据开放版权许可（例如知识共享) 或在公共领域。在这两种情况下，中的每个人世界享受免费访问开放式教育资源进行免费学习，而其中所提到“教育就是分享”的概念：</p>
+<p>自互联网发明以来，版权法已经“加强”，以进一步限制互联网的复制和共享能力。虽然现有的法律、商业模式和教育实践使教师和学习者难以充分利用互联网的力量来获取高质量、负担得起的学习材料，但开放的教育资源可以自由复制和共享（以及修改和重新混合）在不触犯法律的情况下。开放的教育资源使互联网的全部技术力量能够应用于教育。开放式反应堆允许究竟是什么互联网启用：与世界免费共享教育资源。</p>
+<p>基于 Robert R. McCrae 博士 2020 年在 《Psychological Bulletin》 所发表的: “Social consequences of experiential openness.”所认为开放性通常被认为是一种内在的维度，根据意识的特征来定义。然而，不同的接近和处理经验的方式导致了不同的价值体系，这些价值体系对社会互动产生了深远的影响。在本文中，作者回顾了开放与封闭对文化创新、政治意识形态、社会态度、婚姻选择和人际关系的影响。</p>
+<p>同时促进中文互联网内的技术水平的进步，通过开放形参与(Openness Community)；开放性讨论(Openness Idea)；提案(Openness Proposal)、开放性决策(OpennessCouncil)；工程计划(Open ness Engineering Group)来实践开放性理论的落地。</p>
+<span id="more"></span>
+
+<p>本提案是联合现在<a href="">(E)21-0530</a>号提案：“OPENNESS COMMUNITY &amp; IDEA” 的最终实现，亦在于通过<a href="">(C)22-0426</a>为基础下的组织章程的开放性理念实践。通过参考大量的书籍和文献以及开放实践性项目作为参照，所决定的最终设计和服务架构，并最大程度体现<a href="">(C)22-0426</a>号决议，以此作为最终开放形参与的最终实现。</p>
+<h2 id="1-前言"><a href="#1-前言" class="headerlink" title="1 前言"></a>1 前言</h2><p>联合现在是一个面向全球性质的非盈利组织，同时是实践开放性理论组织之一，主要涵盖了开放教育和资源、开放获取、开放知识、开源课题、开放标准、开放式参与、开放式创新、开放想法，代表开放性在互联网尤其是中文互联网的运用，联合现在的最终目标是通过开放性理论实现互联网的开放、共享，任何人都可以参与一项研究和阐述一份想法并得到支持和学习途径。</p>
+<h3 id="1-1-性质"><a href="#1-1-性质" class="headerlink" title="1.1 性质"></a>1.1 性质</h3><p>开放性(Openness)是指知识、技术或其他资源，群众可及性、行动的透明度以及包容性,最早概念由Richard Matthew Stallman 在2009年所编写的“自由软件手册”，最终衍生出了开源运动(Open-source)和免费内容、自由软件、开放、开源、开放获取、开放式创新、开放教育、开放式教育资源、开放式设计机芯、开放政府、开放知识基金会、开放知识、开放思想、开放式专利、开源治理、开源课题、开源新闻、开放标准、体验开放性、透明度。</p>
+<blockquote>
+<p>开放性(Openness)是一个总体概念或哲学，其特点是强调透明度和协作。也就是说，开放性是指“知识、技术和其他资源的可及性;行动的透明度;组织结构的渗透性;以及参与的包容性”。开放可以说是封闭的对立面（中央权威和保密）</p>
+</blockquote>
+<p>开放术语可以指更高层次的概念（例如“开放哲学”）;资源的性质（例如“开放数据”）;流程的性质（例如“开放式创新”）;或对特定领域的影响（例如“开放教育”）[…]通常用于描述这种高阶概念的原则是：获取信息和其他资源;以包容和经常合作的方式参与;资源和行动的透明度;和民主或“民主化”，例如排他性结构的解体。</p>
+<p>开放理念是人类达到文明社会运行中不可缺失的理论之一，在只是开放;技术和其他资源的可及性;行动的透明度;组织结构的渗透性;以及参与的包容性均有重要作用，是促进一个国家群众素质、知识获取和生活体验中必不缺少的一部分。在政治中，开放理念主要在苏联得到运用持不同政见者通过在人民大会中来阐述自己的观点并得到选举表决，最终这种任何公民都可以参与的被称之为人民代表大会制度，最终成就了苏联的伟大，一些发明、理念至今都在使用。</p>
+<p>通过实践开放理论取得的一切成绩和进步的根本原因，归结起来就是：形成了具有适应不同环境的发展，从理论和实际相互结合，通过开放性来促进活动的规模和发展，确立了开放和共识是实现理论的关键性举措，和保障了人民的基本生活体验，发展和丰富了社会的多元性。</p>
+<p>从一定意义上讲，任何社会的发展变化，往往是从生产工具的发展变化开始的，当今世界处于“互联网＋”为领衔的生产工具大变革的时代，同时“互联网＋”这一生产工具正在加剧全球范围内的贫富两极分化，促进了更多互联网开放性和不平等的障碍。现代工业和科学为一方与现代贫困和衰颓为另一方的这种对抗，我们时代的生产力与社会系之间的这种对抗，是显而易见的、不可避免的毋庸争辩的事实。科学技术本身没有阶级属性，但科学技术必然为科学技术占有者所服务。</p>
+<p>联合国教育、科学及文化组织在2018年所倡导的开放式教育资源行动。联合现在是以开放性理论作为主要思想意识，作为自己的行动指南和目标。开放性获取信息和其他资源;以包容和经常协作的方式参与;资源和行动的透明度;以此促进互联网生态的参与和治理，完善互联网相关生态的基础建设，应对未来中永无止境的安全威胁，是联合现在成立的初衷。</p>
+<h3 id="1-2-社区"><a href="#1-2-社区" class="headerlink" title="1.2 社区"></a>1.2 社区</h3><p>开放式参与是涵盖了目前生活中的各个场景，因此社区的定义时提供一个开放的平台，任何国家和地区之间内不同种族可以共同治理的开放性社区，也是联合现在组织总则的最终实现。任何国家和地区之间内不同种族可以共同治理的开放性社区，同时具有阐述自己的想法在社区中进行简短的描述，之后通过引导以更加详细的提案编写，由大会开始筛选，是否通过理事会实现该想法。</p>
+<h3 id="1-3-社区治理"><a href="#1-3-社区治理" class="headerlink" title="1.3 社区治理"></a>1.3 社区治理</h3><p>通过去中心化的方式，通过开放决策是联合现在的权利产生机构和决策机构，通常决定理事会成员、监事会成员、研究员和会员所发布的提案或想法的整理工作，决策提案和计划的运营。同时兼具处理联合现在内重要决定机构，均通过联合现在会员决策进行，任何会员有表决和阐述想法的权利，同时根据最终影响因子决定是否实施。</p>
+<p>影响因子是该提案在目前互联网上开放参与的最终统计结果，主要根据赞成数和开放性建议双重数值来所得出的一种数值,当影响因子≥60时，该提案将会被通过，根据提案的发展，也随着影响因子的变化，最终决定是否列入工程计划中。</p>
+<h2 id="2-技术栈"><a href="#2-技术栈" class="headerlink" title="2 技术栈"></a>2 技术栈</h2><p><img src="https://49812933408852955071488026628034-1301075051.cos.ap-nanjing.myqcloud.com/202205141214471.png"></p>
+<p>基于非赢利的局限性，因此需要尽可能的减少资金的持续流动和多个国家、地区成员之间的协作，并面向开源社区的性质推动提案的协作。通过 Github 所提供的 <a target="_blank" rel="noopener" href="https://docs.github.com/en/developers/overview/github-developer-program">Developer Program Member</a> 使得开放社区可以通过 github 所提供的最大资源限度的减少资金和成本的投入。</p>
+<p>因此对于本次OPENNESS COMMUNITY &amp; IDEA 的技术栈大多针对于前端技术栈，并适当降低大前端技术栈的使用，主要通过 Vue.js 生态来完成大多数功能的实现，对于后端则非必要情况下都通过 github 所提供的 REST API 来进行相应的服务构建。</p>
+<p>为遵循开放性理念，因此 OPENNESS COMMUNITY &amp; IDEA 所有内容都将以公开的形式存放在 github 仓库内，并通过前端提供一定的可视化操作，因此加强项目提案的参与度和协同处理能力。</p>
+<p><img src="https://49812933408852955071488026628034-1301075051.cos.ap-nanjing.myqcloud.com/202205141241380.png"></p>
+<p>整个社区采用<a href="">(P)22/0404</a>号提案所提出的尖锐性设计组件库和统一语言，以此更加体现社区理念的输出，同时全方位采用<a href="">(P)21-0924</a>号工程计划内提案项目，对无障碍和页面交互等做出一定的处理。</p>
+<p>通过 Vue.js 所带来的生态技术栈，Pinia、Axios 分别运用在组件之间通信和 API 响应，通过 Callbacks and Asynchronous 的方式来接收 REST API，并传入至相应组件，加强 Code 的可读性和维护、扩展以及后续协作等。</p>
+<p>此外，本次整体 Style 基础架构基于 Bulma 实现，并通过<a href="">(P)22/0404</a>号提案所提出的尖锐性设计组件库和统一语言进行处理，配合<a href="">(P)21-0924</a>号工程计划内提案项目，实现其平台设计处理，以 Hexo 来辅助其余静态站点的生成，辅助原生语法中的不足和内容之间的扩展，通过 Markdown 语言的特点来减少其协作的学习成本和复杂程度。</p>
+<center>
+<img src="https://49812933408852955071488026628034-1301075051.cos.ap-nanjing.myqcloud.com/202205141325228.png"/>
+</center>
+
+<p>对于平台层，在整体技术栈之外，主要通过 API 接入层来进行实现，以百度AI开放平台作为其基础部分，通过自然语言处理、知识图谱、用户画像、大数据、算法等多个方面来面向社区国际化发展和推动作用。</p>
+<center>
+<img src="https://nickv.codes/wp-content/uploads/2015/08/elastic-algolia-618x190.jpg"/>
+</center>
+
+<p>作为非营利社区，我们获得了 algolia 的强力支持，作为接入服务层的最终实现，配合 Elasticsearch 的分布式搜素和 OpenSource Doc 的两种公开和私有的检索方式，为 Github REST API 作为 Openness Community 后端 API 提供了一定的扩展空间。</p>
+<h2 id="3-设计理念"><a href="#3-设计理念" class="headerlink" title="3.设计理念"></a>3.设计理念</h2><p>为最大程度提体现<a href="">(C)22-0426</a>号决议，本次设计更多的偏向于简洁、干练、庄重等三个方面，具体体现在大量运用<a href="">(P)22/0404</a>号提案所提出的尖锐性设计组件库和统一语言，以此更加体现社区理念的输出，同时全方位采用<a href="">(P)21-0924</a>号工程计划内提案项目，对无障碍和页面交互等做出一定的处理。</p>
+<h3 id="3-1-开放性提案"><a href="#3-1-开放性提案" class="headerlink" title="3.1 开放性提案"></a>3.1 开放性提案</h3><center>
+<img src="https://49812933408852955071488026628034-1301075051.cos.ap-nanjing.myqcloud.com/202205141409478.png"/>
+</center>
+
+<p>联合现在是一个面向全球性质的非盈利组织，同时是实践开放性理论组织之一，主要涵盖了开放教育和资源、开放获取、开放知识、开源课题、开放标准、开放式参与、开放式创新、开放想法，代表开放性在互联网尤其是中文互联网的运用，联合现在的最终目标是通过开放性理论实现互联网的开放、共享，任何人都可以参与一项研究和阐述一份想法并得到支持和学习途径。</p>
+<p>本次设计更多的是将信息和信息的整合，以全新的社区方式进行展示，注重强调参与、正义性、开放参与、想法提出、讨论、信息整合等方面等环节进行大量的填充，使得其设计不会感觉到压抑和繁琐。</p>
+<img src="https://49812933408852955071488026628034-1301075051.cos.ap-nanjing.myqcloud.com/202205141414611.png"/>
+
+<p>因此对于社区的设计，更多的是最大程度体现<a href="">(C)22-0426</a>号决议，以此作为最终开放形参与的最终实现，因此对于社区，主要分为三个选项栏来进行不同属性功能页面的切换。</p>
+<p>对于开放性提案、开放性想法则是合并在第一栏选择中，开放式参与是涵盖了目前生活中的各个场景，因此社区的定义时提供一个开放的平台，任何国家和地区之间内不同种族可以共同治理的开放性社区。</p>
+<p>任何国家和地区之间内不同种族可以共同治理的开放性社区，同时具有阐述自己的想法在社区中进行简短的描述，之后通过引导以更加详细的提案编写，由大会开始筛选，是否通过理事会实现该想法。</p>
+<h3 id="3-2-开放性决策"><a href="#3-2-开放性决策" class="headerlink" title="3.2 开放性决策"></a>3.2 开放性决策</h3><img src="https://49812933408852955071488026628034-1301075051.cos.ap-nanjing.myqcloud.com/202205141417048.png"/>
+
+<p>开放决策是联合现在的权利产生机构和决策机构，通常决定理事会成员、监事会成员、研究员和会员所发布的提案或想法的整理工作，决策提案和计划的运营。同时兼具处理联合现在内重要决定机构，均通过联合现在会员决策进行，任何会员有表决和阐述想法的权利，同时根据最终影响因子决定是否实施。</p>
+<blockquote>
+<p>影响因子是该提案在目前互联网上开放参与的最终统计结果，主要根据赞成数和开放性建议双重数值来所得出的一种数值,当影响因子≥60时，该提案将会被通过，根据提案的发展，也随着影响因子的变化，最终决定是否列入工程计划中。</p>
+</blockquote>
+<img src="https://49812933408852955071488026628034-1301075051.cos.ap-nanjing.myqcloud.com/202205141423411.png"/>
+
+<p>开放决策(Openness Council)，又名为大会，是联合现在的决策机构，针对开放性决策的设计，更多的是体现出正在进行和正在商讨的信息，进行整合展示，注重参与和资料的下载、分析、二次修改。</p>
+<h3 id="3-3-工程计划"><a href="#3-3-工程计划" class="headerlink" title="3.3 工程计划"></a>3.3 工程计划</h3><img src="https://49812933408852955071488026628034-1301075051.cos.ap-nanjing.myqcloud.com/202205141428995.png"/>
+
+<p>开放工程计划(Openness Engineering Group)又称理事会，通常是由理事会成员所进行实现和维护的提案实际性建设工作。任何具有可行性和可参与性的提案将会通过工程计划是提案的最终实现，并以此为长期目标进行维护，最终形成良好的开放生态体系。</p>
+<img src="https://49812933408852955071488026628034-1301075051.cos.ap-nanjing.myqcloud.com/202205141428617.png"/>
+
+<p>此页面更多的是整合理事会所处理的提案动态和进度，同时注重提案的相关动态，因此与开放性决策相互关联，进行一个上下游的关系扩展，并最终将三个选择栏信息连成一个整体，最终将社区作为研究的中心进行延申，探索新的创新性和可及性，为应对未来永无止境的安全威胁，做出一切可以挽回的相关性提案和计划。</p>
+<h3 id="4-移动端"><a href="#4-移动端" class="headerlink" title="4 移动端"></a>4 移动端</h3><img src="https://49812933408852955071488026628034-1301075051.cos.ap-nanjing.myqcloud.com/202205141433660.png"/>
+
+<p>移动端的设计更多的是通过全方位采用<a href="">(P)21-0924</a>号工程计划内提案项目，更加的符合移动端的需求，而不是单纯的追求其庄重，更多的采用简洁的设计语言 Qionglou 作为其设计规范，因此与<a href="">(P)22/0404</a>号提案所提出的尖锐性设计组件库和统一语言不同，更加的为舒适度进行偏移。</p>
+<p>对于本次的设计项目，通过上述三个原型和一个移动端的原型设计，作为最终的设计语言输出，因此在开发的过程中，不会做太大改动，一切以最终开发效果为准。</p>
+
+            </div>
+          
+
+    
+      <footer class="post-footer">
+		
+		<div class="post-tags">
+		  
+			<a href="/tags/E-21-0530/">(E)21-0530</a>
+		  
+		</div>
+		
+
+        
+        
+  <nav class="post-nav">
+    
+    
+      <a class="next" href="/2022/04/29/%E5%85%B3%E4%BA%8E%E9%A6%99%E6%B8%AF%E5%9C%B0%E5%8C%BA%E6%80%A7%E6%9C%8D%E5%8A%A1%E4%BA%A7%E4%B8%9A%E5%AF%B9%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86%E7%9A%84%E6%96%87%E5%8C%96%E5%85%A5%E4%BE%B5%E5%8F%8D%E5%BA%94%E5%87%BA%E7%9A%84%E6%B7%B1%E5%B1%82%E5%BD%B1%E5%93%8D/">
+        <span class="next-text nav-default">关于香港地区性服务产业对中国大陆的文化入侵反应出的深层影响</span>
+        <span class="prev-text nav-mobile">下一篇</span>
+        <i class="iconfont icon-right"></i>
+      </a>
+    
+  </nav>
+
+        
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+      </footer>
+    
+  </article>
+
+    </div>
+
+      </div>
+
+      <footer id="colophon"><span class="copyright-year">
+    
+        &copy;
+    
+        2014 -
+    
+    2022
+    <span class="footer-author">Jiangxue Team.</span>
+    <span class="power-by">
+        Powered by <a class="hexo-link" target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a> and <a class="theme-link" target="_blank" rel="noopener" href="https://github.com/frostfan/hexo-theme-polarbear">Polar Bear</a>
+    </span>
+</span>
+
+      </footer>
+
+      <div class="back-to-top" id="back-to-top">
+        <i class="iconfont icon-up"></i>
+      </div>
+    </div>
+    
+
+
+    
+
+
+
+
+  
+    <script type="text/javascript" src="/lib/jquery/jquery-3.1.1.min.js"></script>
+  
+
+  
+
+    <script type="text/javascript" src="/js/src/theme.js?v=1.1"></script>
+<script type="text/javascript" src="/js/src/bootstrap.js?v=1.1"></script>
+
+  </body>
+</html>
